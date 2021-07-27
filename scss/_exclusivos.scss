@@ -1,0 +1,27 @@
+.exclusivos {
+    @extend .estreno;
+    .exclusivos__titulo {
+        font-family: 'Merriweather', serif;
+        text-align: center;
+        padding-top: 0.5em;
+    }
+}
+
+.exclusivos__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1em;
+    .exclusivos__cuerpo {
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(0, 0, 0, 0.425);
+        padding: 1em;
+        .exclusivos__p {
+            font-family: 'Montserrat', sans-serif;
+            .exclusivos__strong {
+                color: $opcolor;
+            }
+        }
+    }
+}

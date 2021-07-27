@@ -1,0 +1,16 @@
+.stream {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: $gradiente1;
+    width: 100%;
+    .stream__titulo {
+        font-family: 'Merriweather', serif;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .stream__ventana {
+        padding-bottom: 1em;
+    }
+}

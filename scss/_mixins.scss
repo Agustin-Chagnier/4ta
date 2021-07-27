@@ -1,0 +1,6 @@
+$width:50em;
+$height:30em;
+@mixin videomedidafull ($width, $height) {
+    width: $width;
+    height: $height;
+}

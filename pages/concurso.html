@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Envianos una pieza de tu material. Nuestros seguidores votan en nuestro canal y el ganador se gana un lugar en nuestro stream.">
+    <meta name="keyword" content="concurso, votacion, postulantes, stream, material, musical, shows, vivo, artistas, bandas, session">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="../css/index.css" rel="stylesheet">
+
+
+    <title>LAMS Concurso</title>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- NAV (BOOTSTRAP) -->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <img class="navbar-brand" src="../img/logo-Nav.jpg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="botonDropdown">MENU</span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav_link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav_link" href="notas.html">Notas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav_link" href="concurso.html">Concurso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav_link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav_link" href="stream.html">Stream</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-- CONCURSO -->
+
+    <div class="container-fluid">
+        <section class="concurso">
+            <div class="concurso__bienvenida">
+                <h1 class="concurso__bienvenida--titulo">"Haciendo sonar al mundo"</h1>
+                <p class="concurso__mensaje">
+                    LAMS abre las puertas de su estudio cada semana y quiere invitarte a su concurso semanal donde podes ganar un lugar en nuestras sesiones online. Solo tenes que mandar una muestra del material de tu banda/proyecto. Los 5 participantes mas votados en nuestra
+                    seccion de postulantes de YouTube tendran su material publicado en nuestra Home Page y el mas votado de todos podra tocar en una de las LAMS session de cada domingo.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- FORMULARIO -->
+
+    <div class="container-fluid">
+        <section class="formulario">
+            <form class="formulario__caja" action="">
+                <div class="formulario__elementos">
+                    <label for="proyecto">Proyecto</label>
+                    <input name="proyecto" id="proyecto" type="text" required="">
+                </div>
+                <div class="formulario__elementos">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email" required="">
+                </div>
+                <div class="formulario__elementos">
+                    <label for="numero">Numero contacto</label>
+                    <input name="numero" id="numero" type="text" required="">
+                </div>
+                <div class="formulario__elementos">
+                    <label for="video">Video</label>
+                    <input name="video" id="video" type="file" required="">
+                </div>
+                <div class="formulario__elementos">
+                    <label for="lam">Proyecto fuera de Latinoamerica?</label>
+                    <input name="lam" id="lam" type="checkbox">
+                </div>
+                <div class="formulario__elementos">
+                    <label for="locacion">Zona/Locacion</label>
+                    <select name="pais">
+                        <option value="argentina">Argentina</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="otro">Otro...</option>
+                    </select>
+                </div>
+                <div class="formulario__elementos">
+                    <label for="solista">Solista</label>
+                    <input name="solista" id="solista" type="radio">
+                    <label for="banda/grupo">Banda/grupo</label>
+                    <input name="banda/grupo" id="banda/grupo" type="radio">
+                    <label for="ensamble">Ensamble</label>
+                    <input name="ensamble" id="ensamble" type="radio">
+                </div>
+                <div class="formulario__elementos">
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Enviar suscripcion">
+                </div>
+            </form>
+        </section>
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer__bloque">
+            <div class="footer__envoltorio">
+                <h4 class="footer__titulo">REFERENCIAS/COPYRIGHT</h4>
+                <img class="footer__logo" src="../img/copyright.svg" width="30m">
+            </div>
+            <p class="footer__data">Agustin Ezequiel Chagnier / 2021</p>
+        </div>
+        <div class="footer__redes">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="footer__links--fb" src="../img/facebook.svg" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="footer__links--ig" src="../img/instagram.svg" alt="instagram">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img class="footer__links--tw" src="../img/twitter.svg" alt="twitter">
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img class="footer__links--wa" src="../img/whatsapp.svg" alt="whatsapp">
+            </a>
+        </div>
+    </footer>
+
+
+    <!-- BOOTSTRAP JS & POPER -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- CAROUSEL JS -->
+    <script src="js/carousel.js"></script>
+
+</body>
+
+</html>
+</body>
+
+</html>

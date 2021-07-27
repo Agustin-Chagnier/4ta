@@ -1,0 +1,48 @@
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.concurso {
+    width: 100vw;
+    .concurso__img {
+        position: absolute;
+        width: 100vw;
+        opacity: 0.3;
+    }
+    .concurso__bienvenida {
+        background-image: url("../img/img-concurso.jpg");
+        width: 100vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .concurso__bienvenida--titulo {
+            padding-top: 0.5em;
+            font-size: 1.2em;
+            text-align: center;
+            font-family: 'Merriweather', serif;
+        }
+        .concurso__mensaje {
+            font-size: 0.66em;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+        }
+    }
+}
+
+.formulario {
+    background-image: $gradiente1;
+    .formulario__caja {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        .formulario__elementos {
+            padding: 1em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

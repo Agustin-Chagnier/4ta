@@ -1,0 +1,26 @@
+.reviews {
+    @extend .postulantes;
+    .reviews__titulo {
+        @extend .postulantes__titulo;
+    }
+}
+
+.reviews__card {
+    @extend .exclusivos__card;
+    .reviews__cuerpo {
+        @extend .exclusivos__cuerpo;
+        .reviews__p {
+            @extend .exclusivos__p;
+            .reviews__strong {
+                @extend .exclusivos__strong;
+            }
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0%;
+}

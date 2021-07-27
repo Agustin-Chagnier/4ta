@@ -1,0 +1,44 @@
+.estreno {
+    background-image: $gradiente1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .estreno__titulo {
+        font-family: 'Merriweather', serif;
+        padding-top: 0.5em;
+        text-align: center;
+    }
+    .estreno__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        .estreno__video {
+            width: 100vw;
+            border: solid black 4px;
+            border-radius: 4px;
+            align-self: center;
+        }
+        .estreno__ficha {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding-top: 1em;
+            .estreno__fecha {
+                font-family: 'Montserrat', sans-serif;
+            }
+            .estreno__data {
+                font-family: 'Montserrat', sans-serif;
+            }
+            .estreno__compra {
+                width: 8em;
+                align-self: center;
+                margin-bottom: 2em;
+                border: solid $terciary 2px;
+                border-radius: 3px;
+            }
+        }
+    }
+}

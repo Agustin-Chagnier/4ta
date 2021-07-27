@@ -1,0 +1,39 @@
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: $primary;
+    .footer__bloque {
+        display: flex;
+        flex-direction: column;
+        .footer__envoltorio {
+            display: flex;
+            flex-direction: row;
+            padding-top: 0.5em;
+            .footer__titulo {
+                padding-right: 0.1em;
+            }
+        }
+    }
+    .footer__redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 2em;
+        .footer__links--fb {
+            width: 3em;
+            padding: 0;
+        }
+        .footer__links--ig {
+            width: 3em;
+            padding: 0;
+        }
+        .footer__links--tw {
+            width: 3em;
+            padding: 0;
+        }
+        .footer__links--wa {
+            width: 3em;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,728 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+.navbar {
+  background-color: #834083; }
+
+.navbar-brand {
+  width: 30%;
+  padding-left: 1em; }
+
+.botonDropdown {
+  font-family: 'Merriweather', serif; }
+
+a {
+  text-decoration: none;
+  color: wheat;
+  padding-left: 1.5em;
+  padding-bottom: 0.5em; }
+
+.estreno, .exclusivos {
+  background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .estreno .estreno__titulo, .exclusivos .estreno__titulo {
+    font-family: 'Merriweather', serif;
+    padding-top: 0.5em;
+    text-align: center; }
+  .estreno .estreno__container, .exclusivos .estreno__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; }
+    .estreno .estreno__container .estreno__video, .exclusivos .estreno__container .estreno__video {
+      width: 100vw;
+      border: solid black 4px;
+      border-radius: 4px;
+      align-self: center; }
+    .estreno .estreno__container .estreno__ficha, .exclusivos .estreno__container .estreno__ficha {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding-top: 1em; }
+      .estreno .estreno__container .estreno__ficha .estreno__fecha, .exclusivos .estreno__container .estreno__ficha .estreno__fecha {
+        font-family: 'Montserrat', sans-serif; }
+      .estreno .estreno__container .estreno__ficha .estreno__data, .exclusivos .estreno__container .estreno__ficha .estreno__data {
+        font-family: 'Montserrat', sans-serif; }
+      .estreno .estreno__container .estreno__ficha .estreno__compra, .exclusivos .estreno__container .estreno__ficha .estreno__compra {
+        width: 8em;
+        align-self: center;
+        margin-bottom: 2em;
+        border: solid #f3bbf3 2px;
+        border-radius: 3px; }
+
+.populares, .noticias {
+  background-color: #FFCEAD;
+  padding-bottom: 1em; }
+  .populares .populares__titulo, .noticias .populares__titulo, .noticias .noticias__titulo {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding-top: 0.5em; }
+
+.card {
+  margin: 0.4em; }
+
+.card-back {
+  height: 2em;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.425); }
+  .card-back .card-body {
+    padding-top: 0.3em;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFCEAD; }
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none; }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block; } }
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex; }
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%); }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%); } }
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0); }
+
+.postulantes, .reviews {
+  background-image: linear-gradient(to bottom, #FFCEAD, #FFF5AB); }
+  .postulantes .postulantes__titulo, .reviews .postulantes__titulo, .reviews .reviews__titulo {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding-top: 0.5em; }
+  .postulantes .carousel, .reviews .carousel {
+    padding-bottom: 0.5em; }
+
+.card-back {
+  height: 2em;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.425); }
+  .card-back .card-body {
+    padding-top: 0.3em;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFCEAD; }
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none; }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block; } }
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex; }
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%); }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%); } }
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0); }
+
+.exclusivos .exclusivos__titulo {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  padding-top: 0.5em; }
+
+.exclusivos__card, .reviews__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1em; }
+  .exclusivos__card .exclusivos__cuerpo, .reviews__card .exclusivos__cuerpo, .reviews__card .reviews__cuerpo {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 1em; }
+    .exclusivos__card .exclusivos__cuerpo .exclusivos__p, .reviews__card .exclusivos__cuerpo .exclusivos__p, .reviews__card .reviews__cuerpo .exclusivos__p, .reviews__card .reviews__cuerpo .reviews__p {
+      font-family: 'Montserrat', sans-serif; }
+      .exclusivos__card .exclusivos__cuerpo .exclusivos__p .exclusivos__strong, .reviews__card .exclusivos__cuerpo .exclusivos__p .exclusivos__strong, .reviews__card .reviews__cuerpo .exclusivos__p .exclusivos__strong, .reviews__card .reviews__cuerpo .reviews__p .exclusivos__strong, .reviews__card .reviews__cuerpo .reviews__p .reviews__strong {
+        color: #eeeeee; }
+
+.noticias__card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .noticias__card1 .noticias__cuerpo {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 1em; }
+    .noticias__card1 .noticias__cuerpo .noticias__p {
+      font-family: 'Montserrat', sans-serif; }
+      .noticias__card1 .noticias__cuerpo .noticias__p .noticias__strong {
+        color: #eeeeee; }
+
+.noticias__card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .noticias__card2 .noticias__cuerpo {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 1em; }
+    .noticias__card2 .noticias__cuerpo .noticias__p {
+      font-family: 'Montserrat', sans-serif; }
+      .noticias__card2 .noticias__cuerpo .noticias__p .noticias__strong {
+        color: #eeeeee; }
+
+.noticias__card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .noticias__card3 .noticias__cuerpo {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 1em; }
+    .noticias__card3 .noticias__cuerpo .noticias__p {
+      font-family: 'Montserrat', sans-serif; }
+      .noticias__card3 .noticias__cuerpo .noticias__p .noticias__strong {
+        color: #eeeeee; }
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0%; }
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px; }
+
+.concurso {
+  width: 100vw; }
+  .concurso .concurso__img {
+    position: absolute;
+    width: 100vw;
+    opacity: 0.3; }
+  .concurso .concurso__bienvenida {
+    background-image: url("../img/img-concurso.jpg");
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
+      padding-top: 0.5em;
+      font-size: 1.2em;
+      text-align: center;
+      font-family: 'Merriweather', serif; }
+    .concurso .concurso__bienvenida .concurso__mensaje {
+      font-size: 0.66em;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800; }
+
+.formulario {
+  background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
+  .formulario .formulario__caja {
+    width: 100vw;
+    display: flex;
+    flex-direction: column; }
+    .formulario .formulario__caja .formulario__elementos {
+      padding: 1em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+
+.nosotros {
+  background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .nosotros .nosotros__titulo {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em; }
+  .nosotros .card {
+    align-self: center;
+    margin-bottom: 1em; }
+    .nosotros .card .card-body {
+      background-color: burlywood; }
+
+.stream {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+  width: 100%; }
+  .stream .stream__titulo {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em; }
+  .stream .stream__ventana {
+    padding-bottom: 1em; }
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #834083; }
+  .footer .footer__bloque {
+    display: flex;
+    flex-direction: column; }
+    .footer .footer__bloque .footer__envoltorio {
+      display: flex;
+      flex-direction: row;
+      padding-top: 0.5em; }
+      .footer .footer__bloque .footer__envoltorio .footer__titulo {
+        padding-right: 0.1em; }
+  .footer .footer__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 2em; }
+    .footer .footer__redes .footer__links--fb {
+      width: 3em;
+      padding: 0; }
+    .footer .footer__redes .footer__links--ig {
+      width: 3em;
+      padding: 0; }
+    .footer .footer__redes .footer__links--tw {
+      width: 3em;
+      padding: 0; }
+    .footer .footer__redes .footer__links--wa {
+      width: 3em;
+      padding: 0; }
+
+.error {
+  background-color: #FFCEAD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .error .error__img {
+    justify-self: center;
+    align-self: center;
+    width: 65%;
+    padding-top: 1em; }
+  .error .error__mensaje {
+    align-self: center;
+    position: absolute;
+    font-family: montserrat;
+    font-size: 2.5em;
+    color: wheat;
+    padding-top: 14em; }
+
+@media only screen and (min-width: 480px) {
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px; }
+  .concurso {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    width: 100vw; }
+    .concurso .concurso__img {
+      position: absolute;
+      width: 100vw;
+      opacity: 0.3; }
+    .concurso .concurso__bienvenida {
+      width: 100vw;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
+        padding-top: 0.5em;
+        font-size: 1.2em;
+        text-align: center;
+        font-family: 'Merriweather', serif; }
+      .concurso .concurso__bienvenida .concurso__mensaje {
+        font-size: 1.03em;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800; }
+  .formulario {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
+    .formulario .formulario__caja {
+      width: 100vw;
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario__caja .formulario__elementos {
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; } }
+
+@media only screen and (min-width: 600px) {
+  .estreno, .exclusivos {
+    background-image: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .estreno .estreno__titulo, .exclusivos .estreno__titulo {
+      font-family: 'Merriweather', serif;
+      text-align: left;
+      position: absolute;
+      padding-bottom: 9em;
+      padding-left: 0.5em;
+      color: #ec499b;
+      z-index: 2; }
+    .estreno .estreno__container .estreno__video, .exclusivos .estreno__container .estreno__video {
+      width: 100vw;
+      border: none;
+      opacity: 0.6; }
+    .estreno .estreno__container .estreno__ficha, .exclusivos .estreno__container .estreno__ficha {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      justify-content: left;
+      text-align: left;
+      padding-left: 0.5em; }
+      .estreno .estreno__container .estreno__ficha .estreno__fecha, .exclusivos .estreno__container .estreno__ficha .estreno__fecha {
+        font-family: 'Merriweather', serif;
+        font-size: 3.5em;
+        padding-top: 0.5em;
+        padding-left: 0.1em;
+        color: white; }
+      .estreno .estreno__container .estreno__ficha .estreno__data, .exclusivos .estreno__container .estreno__ficha .estreno__data {
+        font-family: 'Montserrat', sans-serif;
+        color: yellow;
+        padding-left: 0.5em; }
+      .estreno .estreno__container .estreno__ficha .estreno__compra, .exclusivos .estreno__container .estreno__ficha .estreno__compra {
+        width: 12em;
+        border: solid #f3bbf3 2px;
+        border-radius: 10px;
+        align-self: initial; }
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px; }
+  .concurso {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    width: 100vw; }
+    .concurso .concurso__img {
+      position: absolute;
+      width: 100vw;
+      opacity: 0.3; }
+    .concurso .concurso__bienvenida {
+      width: 100vw;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
+        padding-top: 0.5em;
+        font-size: 2em;
+        text-align: center;
+        font-family: 'Merriweather', serif; }
+      .concurso .concurso__bienvenida .concurso__mensaje {
+        font-size: 1.28em;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        padding: 0%; }
+  .formulario {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
+    .formulario .formulario__caja {
+      width: 100vw;
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario__caja .formulario__elementos {
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; } }
+
+@media only screen and (min-width: 768px) {
+  .navbar-brand {
+    width: 15%; }
+  .estreno .estreno__container .estreno__video, .exclusivos .estreno__container .estreno__video {
+    width: 100vw;
+    border-radius: 4px;
+    align-self: center; }
+  .nosotros {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .nosotros .nosotros__titulo {
+      font-family: 'Merriweather', serif;
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em; }
+    .nosotros .nosotros__fichas {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .nosotros .nosotros__fichas .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 1em; }
+        .nosotros .nosotros__fichas .card .card-body {
+          background-color: burlywood; }
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px; }
+  .concurso {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    width: 100vw; }
+    .concurso .concurso__img {
+      position: absolute;
+      width: 100vw;
+      opacity: 0.3; }
+    .concurso .concurso__bienvenida {
+      width: 100vw;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
+        padding-top: 0.5em;
+        font-size: 2em;
+        text-align: center;
+        font-family: 'Merriweather', serif; }
+      .concurso .concurso__bienvenida .concurso__mensaje {
+        font-size: 1.7em;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        padding: 0%; }
+  .formulario {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
+    .formulario .formulario__caja {
+      width: 100vw;
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario__caja .formulario__elementos {
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; } }
+
+@media only screen and (min-width: 1024px) {
+  .navbar-brand {
+    width: 8%; }
+  .estreno .estreno__container .estreno__video, .exclusivos .estreno__container .estreno__video {
+    width: 99vw;
+    border-radius: 4px;
+    align-self: center; }
+  .estreno .estreno__container .estreno__ficha .estreno__compra, .exclusivos .estreno__container .estreno__ficha .estreno__compra {
+    font-family: 'Merriweather', serif;
+    width: 15em;
+    height: 3em;
+    background-color: hotpink;
+    transition: color 0.5s; }
+  .estreno .estreno__container .estreno__ficha .estreno__compra:hover, .exclusivos .estreno__container .estreno__ficha .estreno__compra:hover {
+    transform: scale(1.2);
+    color: #FFCEAD; }
+  .nosotros {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .nosotros .nosotros__titulo {
+      font-family: 'Merriweather', serif;
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em; }
+    .nosotros .nosotros__fichas {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .nosotros .nosotros__fichas .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 1em; }
+        .nosotros .nosotros__fichas .card .card-body {
+          background-color: burlywood; }
+  .concurso {
+    background-image: none;
+    background-color: #f3bbf3; }
+  .concurso__mensaje {
+    text-align: center;
+    margin: 3em;
+    font-size: 2.25em; }
+  .nav_link {
+    padding-right: 1em;
+    text-decoration: none;
+    font-size: 2em;
+    color: #FFCEAD;
+    transition: color 0.7s; }
+  .nav_link:hover {
+    color: hotpink; }
+  .formulario {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
+    .formulario .formulario__caja {
+      width: 100vw;
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario__caja .formulario__elementos {
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap; }
+  .stream {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    width: 100%;
+    padding-bottom: 10em; }
+    .stream .stream__titulo {
+      font-family: 'Merriweather', serif;
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em; }
+    .stream .stream__ventana {
+      align-self: center;
+      width: 50em;
+      height: 30em;
+      padding-bottom: 5em; }
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px; }
+  .concurso {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    width: 100vw; }
+    .concurso .concurso__img {
+      position: absolute;
+      width: 100vw;
+      opacity: 0.3; }
+    .concurso .concurso__bienvenida {
+      width: 100vw;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
+        padding-top: 1 em;
+        font-size: 2em;
+        text-align: center;
+        font-family: 'Merriweather', serif; }
+      .concurso .concurso__bienvenida .concurso__mensaje {
+        font-size: 1.8em;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        padding: 0%; }
+  .formulario {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
+    .formulario .formulario__caja {
+      width: 100vw;
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario__caja .formulario__elementos {
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; } }
+
+@media only screen and (min-width: 1200px) {
+  .concurso {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    width: 100vw; }
+    .concurso .concurso__img {
+      position: absolute;
+      width: 100vw;
+      opacity: 0.3; }
+    .concurso .concurso__bienvenida {
+      width: 100vw;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
+        padding-top: 1 em;
+        font-size: 2em;
+        text-align: center;
+        font-family: 'Merriweather', serif; }
+      .concurso .concurso__bienvenida .concurso__mensaje {
+        font-size: 2.12em;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        padding: 0%; }
+  .formulario {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
+    .formulario .formulario__caja {
+      width: 100vw;
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario__caja .formulario__elementos {
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; } }
+
+@media only screen and (min-width: 1900px) {
+  .concurso {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    width: 100vw; }
+    .concurso .concurso__img {
+      position: absolute;
+      width: 100vw;
+      opacity: 0.3; }
+    .concurso .concurso__bienvenida {
+      width: 100vw;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
+        padding-top: 1 em;
+        font-size: 2em;
+        text-align: center;
+        font-family: 'Merriweather', serif; }
+      .concurso .concurso__bienvenida .concurso__mensaje {
+        font-size: 2.12em;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        padding: 0%; }
+  .formulario {
+    position: relative;
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
+    .formulario .formulario__caja {
+      width: 100vw;
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario__caja .formulario__elementos {
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+  .estreno__video {
+    width: 100vw;
+    border: solid black 4px;
+    border-radius: 4px;
+    align-self: center; } }
