@@ -1,24 +1,33 @@
 .footer {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 100%;
     background-color: $primary;
     .footer__bloque {
         display: flex;
         flex-direction: column;
+        padding: 2em;
         .footer__envoltorio {
             display: flex;
             flex-direction: row;
-            padding-top: 0.5em;
+            padding-left: 0;
             .footer__titulo {
                 padding-right: 0.1em;
+                color: $secondary;
             }
+        }
+        .footer__data {
+            color: $secondary;
         }
     }
     .footer__redes {
+        width: 10em;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        padding-right: 2em;
+        padding: 2em;
+        justify-content: space-between;
         .footer__links--fb {
             width: 3em;
             padding: 0;
@@ -34,6 +43,10 @@
         .footer__links--wa {
             width: 3em;
             padding: 0;
+        }
+        .footer__links--yt {
+            width: 3.8em;
+            padding-top: 0.2em;
         }
     }
 }

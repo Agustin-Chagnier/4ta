@@ -1,0 +1,64 @@
+.compra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: $gradiente1;
+    .compra__detalle {
+        margin: 2em;
+    }
+    .compra__precio {
+        margin: 2em;
+    }
+    .compra__caja {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $primary;
+        border: solid black 4px;
+        border-radius: 1em;
+        .compra__elementos {
+            padding: 1em;
+            width: 30%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            .compra__label {
+                font-family: Montserrat;
+                font-weight: 900;
+                color: $secondary;
+                padding: 0.5em;
+            }
+        }
+        .compra__elementos--tarjeta {
+            width: 40%;
+            padding: 1em;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+            .compra__label {
+                font-family: Montserrat;
+                font-weight: 900;
+                color: $secondary;
+                padding: 0.5em;
+            }
+        }
+        .compra__confirmacion {
+            margin: 1em;
+            width: 40%;
+            background-color: $terciary;
+            color: wheat;
+            font-size: 1.5em;
+            font-weight: 900;
+            border: solid black 2px;
+            border-radius: 3px;
+            z-index: 1;
+            .compra__confirmacion--link {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

@@ -1,48 +1,52 @@
-.container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
+.row {
+    margin: 0;
 }
 
 .concurso {
-    width: 100vw;
-    .concurso__img {
-        position: absolute;
-        width: 100vw;
-        opacity: 0.3;
-    }
+    width: 100%;
+    background-image: $gradiente1;
     .concurso__bienvenida {
-        background-image: url("../img/img-concurso.jpg");
-        width: 100vw;
-        position: relative;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         .concurso__bienvenida--titulo {
-            padding-top: 0.5em;
-            font-size: 1.2em;
+            padding: 1em;
+            font-size: 1.3em;
             text-align: center;
             font-family: 'Merriweather', serif;
         }
         .concurso__mensaje {
-            font-size: 0.66em;
+            font-size: 1em;
             text-align: center;
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
+            padding: 1.5em;
         }
     }
 }
 
 .formulario {
-    background-image: $gradiente1;
+    background-image: $gradiente2;
     .formulario__caja {
-        width: 100vw;
+        background-color: $primary;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        padding-bottom: 1em;
+        border: solid black 3px;
+        border-radius: 1em;
         .formulario__elementos {
-            padding: 1em;
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            padding: 1em;
+            label {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                color: $secondary;
+            }
         }
     }
 }

@@ -14,10 +14,12 @@
 .botonDropdown {
   font-family: 'Merriweather', serif; }
 
-a {
+.navbar-nav {
+  padding-left: 10em; }
+
+.nav_link {
   text-decoration: none;
   color: wheat;
-  padding-left: 1.5em;
   padding-bottom: 0.5em;
   padding-top: 1em; }
 
@@ -37,16 +39,15 @@ a {
     justify-content: center;
     width: 100%; }
     .estreno .estreno__container .estreno__video, .exclusivos .estreno__container .estreno__video {
-      width: 100vw;
-      border: solid black 4px;
-      border-radius: 4px;
+      width: 100%;
       align-self: center; }
     .estreno .estreno__container .estreno__ficha, .exclusivos .estreno__container .estreno__ficha {
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      padding-top: 1em; }
+      padding-top: 1em;
+      z-index: 3; }
       .estreno .estreno__container .estreno__ficha .estreno__fecha, .exclusivos .estreno__container .estreno__ficha .estreno__fecha {
         font-family: 'Montserrat', sans-serif; }
       .estreno .estreno__container .estreno__ficha .estreno__data, .exclusivos .estreno__container .estreno__ficha .estreno__data {
@@ -57,6 +58,16 @@ a {
         margin-bottom: 2em;
         border: solid #f3bbf3 2px;
         border-radius: 3px; }
+        .estreno .estreno__container .estreno__ficha .estreno__compra .estreno__compra--link, .exclusivos .estreno__container .estreno__ficha .estreno__compra .estreno__compra--link {
+          text-decoration: none;
+          color: inherit; }
+  .estreno .estreno__flecha, .exclusivos .estreno__flecha {
+    display: none;
+    width: 5em;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0em;
+    left: 57em; }
 
 .populares, .noticias {
   background-color: #FFCEAD;
@@ -151,62 +162,131 @@ a {
   text-align: center;
   padding-top: 0.5em; }
 
-.exclusivos__card, .reviews__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 1em; }
-  .exclusivos__card .exclusivos__cuerpo, .reviews__card .exclusivos__cuerpo, .reviews__card .reviews__cuerpo {
+.exclusivos__link {
+  text-decoration: none;
+  color: #FFCEAD; }
+  .exclusivos__link .exclusivos__card {
     display: flex;
-    flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.425);
-    padding: 1em; }
-    .exclusivos__card .exclusivos__cuerpo .exclusivos__p, .reviews__card .exclusivos__cuerpo .exclusivos__p, .reviews__card .reviews__cuerpo .exclusivos__p, .reviews__card .reviews__cuerpo .reviews__p {
-      font-family: 'Montserrat', sans-serif; }
-      .exclusivos__card .exclusivos__cuerpo .exclusivos__p .exclusivos__strong, .reviews__card .exclusivos__cuerpo .exclusivos__p .exclusivos__strong, .reviews__card .reviews__cuerpo .exclusivos__p .exclusivos__strong, .reviews__card .reviews__cuerpo .reviews__p .exclusivos__strong, .reviews__card .reviews__cuerpo .reviews__p .reviews__strong {
-        color: #eeeeee; }
+    flex-direction: column;
+    justify-content: center; }
+    .exclusivos__link .exclusivos__card .exclusivos__cuerpo {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(0, 0, 0, 0.425);
+      padding: 1em; }
+      .exclusivos__link .exclusivos__card .exclusivos__cuerpo .exclusivos__p {
+        font-family: 'Montserrat', sans-serif;
+        color: #FFCEAD; }
+        .exclusivos__link .exclusivos__card .exclusivos__cuerpo .exclusivos__p .exclusivos__strong {
+          color: #eeeeee; }
 
-.noticias__card1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .noticias__card1 .noticias__cuerpo {
+.noticias__link {
+  text-decoration: none;
+  color: #FFCEAD; }
+  .noticias__link .noticias__card1 {
     display: flex;
-    flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.425);
-    padding: 1em; }
-    .noticias__card1 .noticias__cuerpo .noticias__p {
-      font-family: 'Montserrat', sans-serif; }
-      .noticias__card1 .noticias__cuerpo .noticias__p .noticias__strong {
-        color: #eeeeee; }
+    flex-direction: column;
+    justify-content: center; }
+    .noticias__link .noticias__card1 .noticias__cuerpo {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(0, 0, 0, 0.425);
+      padding: 1em; }
+      .noticias__link .noticias__card1 .noticias__cuerpo .noticias__p {
+        font-family: 'Montserrat', sans-serif;
+        color: #FFCEAD; }
+        .noticias__link .noticias__card1 .noticias__cuerpo .noticias__p .noticias__strong {
+          color: #eeeeee; }
 
-.noticias__card2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .noticias__card2 .noticias__cuerpo {
+.noticias__link {
+  text-decoration: none;
+  color: #FFCEAD; }
+  .noticias__link .noticias__card2 {
     display: flex;
-    flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.425);
-    padding: 1em; }
-    .noticias__card2 .noticias__cuerpo .noticias__p {
-      font-family: 'Montserrat', sans-serif; }
-      .noticias__card2 .noticias__cuerpo .noticias__p .noticias__strong {
-        color: #eeeeee; }
+    flex-direction: column;
+    justify-content: center; }
+    .noticias__link .noticias__card2 .noticias__cuerpo {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(0, 0, 0, 0.425);
+      padding: 1em; }
+      .noticias__link .noticias__card2 .noticias__cuerpo .noticias__p {
+        font-family: 'Montserrat', sans-serif;
+        color: #FFCEAD; }
+        .noticias__link .noticias__card2 .noticias__cuerpo .noticias__p .noticias__strong {
+          color: #eeeeee; }
 
-.noticias__card3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .noticias__card3 .noticias__cuerpo {
+.noticias__link {
+  text-decoration: none;
+  color: #FFCEAD; }
+  .noticias__link .noticias__card3 {
     display: flex;
-    flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.425);
-    padding: 1em; }
-    .noticias__card3 .noticias__cuerpo .noticias__p {
-      font-family: 'Montserrat', sans-serif; }
-      .noticias__card3 .noticias__cuerpo .noticias__p .noticias__strong {
-        color: #eeeeee; }
+    flex-direction: column;
+    justify-content: center; }
+    .noticias__link .noticias__card3 .noticias__cuerpo {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(0, 0, 0, 0.425);
+      padding: 1em; }
+      .noticias__link .noticias__card3 .noticias__cuerpo .noticias__p {
+        font-family: 'Montserrat', sans-serif;
+        color: #FFCEAD; }
+        .noticias__link .noticias__card3 .noticias__cuerpo .noticias__p .noticias__strong {
+          color: #eeeeee; }
+
+.reviews__link {
+  text-decoration: none;
+  color: #FFCEAD; }
+  .reviews__link .reviews__card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .reviews__link .reviews__card1 .reviews__cuerpo {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(0, 0, 0, 0.425);
+      padding: 1em; }
+      .reviews__link .reviews__card1 .reviews__cuerpo .reviews__p {
+        font-family: 'Montserrat', sans-serif;
+        color: #FFCEAD; }
+        .reviews__link .reviews__card1 .reviews__cuerpo .reviews__p .reviews__strong {
+          color: #eeeeee; }
+
+.reviews__link {
+  text-decoration: none;
+  color: #FFCEAD; }
+  .reviews__link .reviews__card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .reviews__link .reviews__card2 .reviews__cuerpo {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(0, 0, 0, 0.425);
+      padding: 1em; }
+      .reviews__link .reviews__card2 .reviews__cuerpo .reviews__p {
+        font-family: 'Montserrat', sans-serif;
+        color: #FFCEAD; }
+        .reviews__link .reviews__card2 .reviews__cuerpo .reviews__p .reviews__strong {
+          color: #eeeeee; }
+
+.reviews__link {
+  text-decoration: none;
+  color: #FFCEAD; }
+  .reviews__link .reviews__card3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .reviews__link .reviews__card3 .reviews__cuerpo {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(0, 0, 0, 0.425);
+      padding: 1em; }
+      .reviews__link .reviews__card3 .reviews__cuerpo .reviews__p {
+        font-family: 'Montserrat', sans-serif;
+        color: #FFCEAD; }
+        .reviews__link .reviews__card3 .reviews__cuerpo .reviews__p .reviews__strong {
+          color: #eeeeee; }
 
 .pagination {
   display: flex;
@@ -214,52 +294,82 @@ a {
   justify-content: center;
   margin: 0%; }
 
-.container-fluid {
-  padding-right: 0px;
-  padding-left: 0px; }
+.nota__caja {
+  background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .nota__caja .nota__titulo {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2em;
+    align-items: center;
+    padding: 0.5em; }
+  .nota__caja .nota__envoltorio {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .nota__caja .nota__envoltorio .nota__foto {
+      width: 90%;
+      border: solid black 5px;
+      border-radius: 1em;
+      margin: 1em; }
+    .nota__caja .nota__envoltorio .nota__cuerpo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1em;
+      padding: 0em; }
+
+.row {
+  margin: 0; }
 
 .concurso {
-  width: 100vw; }
-  .concurso .concurso__img {
-    position: absolute;
-    width: 100vw;
-    opacity: 0.3; }
+  width: 100%;
+  background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
   .concurso .concurso__bienvenida {
-    background-image: url("../img/img-concurso.jpg");
-    width: 100vw;
-    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
     .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
-      padding-top: 0.5em;
-      font-size: 1.2em;
+      padding: 1em;
+      font-size: 1.3em;
       text-align: center;
       font-family: 'Merriweather', serif; }
     .concurso .concurso__bienvenida .concurso__mensaje {
-      font-size: 0.66em;
+      font-size: 1em;
       text-align: center;
       font-family: 'Montserrat', sans-serif;
-      font-weight: 800; }
+      font-weight: 800;
+      padding: 1.5em; }
 
 .formulario {
-  background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
+  background-image: linear-gradient(to bottom, #FFCEAD, #FFF5AB); }
   .formulario .formulario__caja {
-    width: 100vw;
+    background-color: #834083;
+    width: 100%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-bottom: 1em;
+    border: solid black 3px;
+    border-radius: 1em; }
     .formulario .formulario__caja .formulario__elementos {
-      padding: 1em;
+      width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: space-between; }
+      justify-content: space-between;
+      padding: 1em; }
+      .formulario .formulario__caja .formulario__elementos label {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #FFCEAD; }
 
 .nosotros {
   background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   .nosotros .nosotros__titulo {
     font-family: 'Merriweather', serif;
     text-align: center;
@@ -283,26 +393,35 @@ a {
     padding-top: 1em;
     padding-bottom: 1em; }
   .stream .stream__ventana {
+    width: 100%;
     padding-bottom: 1em; }
 
 .footer {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 100%;
   background-color: #834083; }
   .footer .footer__bloque {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 2em; }
     .footer .footer__bloque .footer__envoltorio {
       display: flex;
       flex-direction: row;
-      padding-top: 0.5em; }
+      padding-left: 0; }
       .footer .footer__bloque .footer__envoltorio .footer__titulo {
-        padding-right: 0.1em; }
+        padding-right: 0.1em;
+        color: #FFCEAD; }
+    .footer .footer__bloque .footer__data {
+      color: #FFCEAD; }
   .footer .footer__redes {
+    width: 10em;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 2em; }
+    padding: 2em;
+    justify-content: space-between; }
     .footer .footer__redes .footer__links--fb {
       width: 3em;
       padding: 0; }
@@ -315,6 +434,89 @@ a {
     .footer .footer__redes .footer__links--wa {
       width: 3em;
       padding: 0; }
+    .footer .footer__redes .footer__links--yt {
+      width: 3.8em;
+      padding-top: 0.2em; }
+
+.compra {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
+  .compra .compra__detalle {
+    margin: 2em; }
+  .compra .compra__precio {
+    margin: 2em; }
+  .compra .compra__caja {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #834083;
+    border: solid black 4px;
+    border-radius: 1em; }
+    .compra .compra__caja .compra__elementos {
+      padding: 1em;
+      width: 30%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between; }
+      .compra .compra__caja .compra__elementos .compra__label {
+        font-family: Montserrat;
+        font-weight: 900;
+        color: #FFCEAD;
+        padding: 0.5em; }
+    .compra .compra__caja .compra__elementos--tarjeta {
+      width: 40%;
+      padding: 1em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start; }
+      .compra .compra__caja .compra__elementos--tarjeta .compra__label {
+        font-family: Montserrat;
+        font-weight: 900;
+        color: #FFCEAD;
+        padding: 0.5em; }
+    .compra .compra__caja .compra__confirmacion {
+      margin: 1em;
+      width: 40%;
+      background-color: #f3bbf3;
+      color: wheat;
+      font-size: 1.5em;
+      font-weight: 900;
+      border: solid black 2px;
+      border-radius: 3px;
+      z-index: 1; }
+      .compra .compra__caja .compra__confirmacion .compra__confirmacion--link {
+        text-decoration: none;
+        color: white; }
+
+.compra__check {
+  background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .compra__check .compra__check--caja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: solid black 2px;
+    border-radius: 0.6em;
+    margin: 5em; }
+    .compra__check .compra__check--caja .compra__check--mensaje {
+      font-family: 'Merriweather', serif;
+      font-size: 1em;
+      justify-self: center;
+      padding: 1em; }
+    .compra__check .compra__check--caja .compra__check--check {
+      width: 5em;
+      padding: 0.5em; }
 
 .error {
   background-color: #FFCEAD;
@@ -335,43 +537,119 @@ a {
     padding-top: 14em; }
 
 @media only screen and (min-width: 480px) {
-  .container-fluid {
-    padding-right: 0px;
-    padding-left: 0px; }
-  .concurso {
-    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
-    width: 100vw; }
-    .concurso .concurso__img {
-      position: absolute;
-      width: 100vw;
-      opacity: 0.3; }
-    .concurso .concurso__bienvenida {
-      width: 100vw;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
-        padding-top: 0.5em;
-        font-size: 1.2em;
-        text-align: center;
-        font-family: 'Merriweather', serif; }
-      .concurso .concurso__bienvenida .concurso__mensaje {
-        font-size: 1.03em;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800; }
   .formulario {
     background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
     .formulario .formulario__caja {
-      width: 100vw;
+      width: 100%;
       display: flex;
       flex-direction: column; }
       .formulario .formulario__caja .formulario__elementos {
         padding: 1em;
         display: flex;
         flex-direction: row;
-        justify-content: space-between; } }
+        justify-content: space-between; }
+  .estreno__flecha {
+    display: none;
+    width: 5em;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0em;
+    left: 57em; }
+  .compra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
+    .compra .compra__detalle {
+      margin: 2em; }
+    .compra .compra__precio {
+      margin: 2em; }
+    .compra .compra__caja {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #834083;
+      border: solid black 4px;
+      border-radius: 1em; }
+      .compra .compra__caja .compra__elementos {
+        padding: 1em;
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between; }
+        .compra .compra__caja .compra__elementos .compra__label {
+          font-family: Montserrat;
+          font-weight: 900;
+          color: #FFCEAD;
+          padding: 0.5em; }
+      .compra .compra__caja .compra__elementos--tarjeta {
+        width: 30%;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start; }
+        .compra .compra__caja .compra__elementos--tarjeta .compra__label {
+          font-family: Montserrat;
+          font-weight: 900;
+          color: #FFCEAD;
+          padding: 0.5em; }
+      .compra .compra__caja .compra__confirmacion {
+        margin: 1em;
+        width: 15em;
+        background-color: #f3bbf3;
+        color: wheat;
+        font-size: 1.5em;
+        font-weight: 900;
+        border: solid black 2px;
+        border-radius: 3px;
+        z-index: 1; }
+        .compra .compra__caja .compra__confirmacion .compra__confirmacion--link {
+          text-decoration: none;
+          color: white; }
+  .footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #834083; }
+    .footer .footer__bloque {
+      display: flex;
+      flex-direction: column;
+      padding: 2em; }
+      .footer .footer__bloque .footer__envoltorio {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0; }
+        .footer .footer__bloque .footer__envoltorio .footer__titulo {
+          padding-right: 0.1em;
+          color: #FFCEAD; }
+      .footer .footer__bloque .footer__data {
+        color: #FFCEAD; }
+    .footer .footer__redes {
+      width: 30em;
+      display: flex;
+      flex-direction: row;
+      padding: 2em;
+      justify-content: space-between; }
+      .footer .footer__redes .footer__links--fb {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--ig {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--tw {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--wa {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--yt {
+        width: 3.8em;
+        padding-top: 0.2em; } }
 
 @media only screen and (min-width: 600px) {
   .estreno, .exclusivos {
@@ -389,7 +667,7 @@ a {
       color: #ec499b;
       z-index: 2; }
     .estreno .estreno__container .estreno__video, .exclusivos .estreno__container .estreno__video {
-      width: 100vw;
+      width: 100%;
       border: none;
       opacity: 0.6; }
     .estreno .estreno__container .estreno__ficha, .exclusivos .estreno__container .estreno__ficha {
@@ -419,13 +697,13 @@ a {
     padding-left: 0px; }
   .concurso {
     background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
-    width: 100vw; }
+    width: 100%; }
     .concurso .concurso__img {
       position: absolute;
-      width: 100vw;
+      width: 100%;
       opacity: 0.3; }
     .concurso .concurso__bienvenida {
-      width: 100vw;
+      width: 100%;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -444,20 +722,117 @@ a {
   .formulario {
     background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
     .formulario .formulario__caja {
-      width: 100vw;
+      width: 100%;
       display: flex;
       flex-direction: column; }
       .formulario .formulario__caja .formulario__elementos {
         padding: 1em;
         display: flex;
         flex-direction: row;
-        justify-content: space-between; } }
+        justify-content: space-between; }
+  .estreno__flecha {
+    display: none;
+    width: 5em;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0em;
+    left: 57em; }
+  .footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    background-color: #834083; }
+    .footer .footer__bloque {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0.5em; }
+      .footer .footer__bloque .footer__envoltorio {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0; }
+        .footer .footer__bloque .footer__envoltorio .footer__titulo {
+          padding-right: 0.1em;
+          color: #FFCEAD; }
+      .footer .footer__bloque .footer__data {
+        color: #FFCEAD; }
+    .footer .footer__redes {
+      width: 30em;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      padding-left: 0;
+      padding-right: 0; }
+      .footer .footer__redes .footer__links--fb {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--ig {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--tw {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--wa {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--yt {
+        width: 3.8em;
+        padding-top: 0.2em; }
+  .compra__check {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .compra__check .compra__check--caja {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      border: solid black 2px;
+      border-radius: 0.6em;
+      margin: 8em; }
+      .compra__check .compra__check--caja .compra__check--mensaje {
+        font-family: 'Merriweather', serif;
+        font-size: 2em;
+        justify-self: center;
+        padding: 1em; }
+      .compra__check .compra__check--caja .compra__check--check {
+        width: 5em;
+        padding: 0.5em; }
+  .nota__caja {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .nota__caja .nota__titulo {
+      font-family: 'Merriweather', serif;
+      font-size: 1.5em;
+      align-items: center;
+      padding: 0.5em; }
+    .nota__caja .nota__envoltorio {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .nota__caja .nota__envoltorio .nota__foto {
+        width: 90%;
+        border: solid black 5px;
+        border-radius: 1em;
+        margin: 1em; }
+      .nota__caja .nota__envoltorio .nota__cuerpo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        padding: 0.3em; } }
 
 @media only screen and (min-width: 768px) {
   .navbar-brand {
     width: 15%; }
   .estreno .estreno__container .estreno__video, .exclusivos .estreno__container .estreno__video {
-    width: 100vw;
+    width: 100%;
     border-radius: 4px;
     align-self: center; }
   .nosotros {
@@ -488,47 +863,97 @@ a {
   .container-fluid {
     padding-right: 0px;
     padding-left: 0px; }
-  .concurso {
-    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
-    width: 100vw; }
-    .concurso .concurso__img {
-      position: absolute;
-      width: 100vw;
-      opacity: 0.3; }
-    .concurso .concurso__bienvenida {
-      width: 100vw;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
-        padding-top: 0.5em;
-        font-size: 2em;
-        text-align: center;
-        font-family: 'Merriweather', serif; }
-      .concurso .concurso__bienvenida .concurso__mensaje {
-        font-size: 1.7em;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        padding: 0%; }
   .formulario {
     background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
     .formulario .formulario__caja {
-      width: 100vw;
+      width: 100%;
       display: flex;
       flex-direction: column; }
       .formulario .formulario__caja .formulario__elementos {
         padding: 1em;
         display: flex;
         flex-direction: row;
-        justify-content: space-between; } }
+        justify-content: space-between; }
+  .footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #834083; }
+    .footer .footer__bloque {
+      display: flex;
+      flex-direction: column;
+      padding: 2em; }
+      .footer .footer__bloque .footer__envoltorio {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0; }
+        .footer .footer__bloque .footer__envoltorio .footer__titulo {
+          padding-right: 0.1em;
+          color: #FFCEAD; }
+      .footer .footer__bloque .footer__data {
+        color: #FFCEAD; }
+    .footer .footer__redes {
+      width: 30em;
+      display: flex;
+      flex-direction: row;
+      padding: 2em;
+      justify-content: space-between; }
+      .footer .footer__redes .footer__links--fb {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--ig {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--tw {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--wa {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--yt {
+        width: 3.8em;
+        padding-top: 0.2em; }
+  .estreno__flecha {
+    display: none;
+    width: 5em;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0em;
+    left: 57em; }
+  .nota__caja {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .nota__caja .nota__titulo {
+      font-family: 'Merriweather', serif;
+      font-size: 1.5em;
+      align-items: center;
+      padding: 0.5em; }
+    .nota__caja .nota__envoltorio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      align-items: center; }
+      .nota__caja .nota__envoltorio .nota__foto {
+        width: 80%;
+        border: solid black 5px;
+        border-radius: 1em;
+        margin: 1em; }
+      .nota__caja .nota__envoltorio .nota__cuerpo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        padding: 0.3em; } }
 
 @media only screen and (min-width: 1024px) {
   .navbar-brand {
     width: 8%; }
   .estreno .estreno__container .estreno__video, .exclusivos .estreno__container .estreno__video {
-    width: 99vw;
+    width: 100%;
     border-radius: 4px;
     align-self: center; }
   .estreno .estreno__container .estreno__ficha .estreno__compra, .exclusivos .estreno__container .estreno__ficha .estreno__compra {
@@ -565,13 +990,6 @@ a {
         margin-bottom: 1em; }
         .nosotros .nosotros__fichas .card .card-body {
           background-color: burlywood; }
-  .concurso {
-    background-image: none;
-    background-color: #f3bbf3; }
-  .concurso__mensaje {
-    text-align: center;
-    margin: 3em;
-    font-size: 2.25em; }
   .nav_link {
     padding-right: 1em;
     text-decoration: none;
@@ -583,7 +1001,7 @@ a {
   .formulario {
     background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
     .formulario .formulario__caja {
-      width: 100vw;
+      width: 100%;
       display: flex;
       flex-direction: column; }
       .formulario .formulario__caja .formulario__elementos {
@@ -612,109 +1030,275 @@ a {
   .container-fluid {
     padding-right: 0px;
     padding-left: 0px; }
-  .concurso {
-    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
-    width: 100vw; }
-    .concurso .concurso__img {
-      position: absolute;
-      width: 100vw;
-      opacity: 0.3; }
-    .concurso .concurso__bienvenida {
-      width: 100vw;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
-        padding-top: 1 em;
-        font-size: 2em;
-        text-align: center;
-        font-family: 'Merriweather', serif; }
-      .concurso .concurso__bienvenida .concurso__mensaje {
-        font-size: 1.8em;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        padding: 0%; }
   .formulario {
     background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
     .formulario .formulario__caja {
-      width: 100vw;
+      width: 100%;
       display: flex;
       flex-direction: column; }
       .formulario .formulario__caja .formulario__elementos {
         padding: 1em;
         display: flex;
         flex-direction: row;
-        justify-content: space-between; } }
+        justify-content: space-between; }
+  .footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #834083; }
+    .footer .footer__bloque {
+      display: flex;
+      flex-direction: column;
+      padding: 2em; }
+      .footer .footer__bloque .footer__envoltorio {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0; }
+        .footer .footer__bloque .footer__envoltorio .footer__titulo {
+          padding-right: 0.1em;
+          color: #FFCEAD; }
+      .footer .footer__bloque .footer__data {
+        color: #FFCEAD; }
+    .footer .footer__redes {
+      width: 30em;
+      display: flex;
+      flex-direction: row;
+      padding: 2em;
+      justify-content: space-between; }
+      .footer .footer__redes .footer__links--fb {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--ig {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--tw {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--wa {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--yt {
+        width: 3.8em;
+        padding-top: 0.2em; }
+  .estreno__flecha {
+    display: none;
+    width: 5em;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0em;
+    left: 57em; }
+  .concurso {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
+    .concurso .concurso__bienvenida {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
+        padding: 1em;
+        font-size: 1.3em;
+        text-align: center;
+        font-family: 'Merriweather', serif; }
+      .concurso .concurso__bienvenida .concurso__mensaje {
+        font-size: 1em;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        padding: 1.5em; }
+  .formulario {
+    background-image: linear-gradient(to bottom, #FFCEAD, #FFF5AB); }
+    .formulario .formulario__caja {
+      background-color: #834083;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 1em;
+      border: solid black 3px;
+      border-radius: 1em; }
+      .formulario .formulario__caja .formulario__elementos {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em; }
+        .formulario .formulario__caja .formulario__elementos label {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 500;
+          color: #FFCEAD;
+          font-size: 1.2em; } }
 
 @media only screen and (min-width: 1200px) {
-  .concurso {
-    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
-    width: 100vw; }
-    .concurso .concurso__img {
-      position: absolute;
-      width: 100vw;
-      opacity: 0.3; }
-    .concurso .concurso__bienvenida {
-      width: 100vw;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
-        padding-top: 1 em;
-        font-size: 2em;
-        text-align: center;
-        font-family: 'Merriweather', serif; }
-      .concurso .concurso__bienvenida .concurso__mensaje {
-        font-size: 2.12em;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        padding: 0%; }
   .formulario {
     background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
     .formulario .formulario__caja {
-      width: 100vw;
+      width: 100%;
       display: flex;
       flex-direction: column; }
       .formulario .formulario__caja .formulario__elementos {
         padding: 1em;
         display: flex;
         flex-direction: row;
-        justify-content: space-between; } }
-
-@media only screen and (min-width: 1900px) {
-  .concurso {
+        justify-content: space-between;
+        font-size: 1.1em; }
+  .footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #834083; }
+    .footer .footer__bloque {
+      display: flex;
+      flex-direction: column;
+      padding: 2em; }
+      .footer .footer__bloque .footer__envoltorio {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0; }
+        .footer .footer__bloque .footer__envoltorio .footer__titulo {
+          padding-right: 0.1em;
+          color: #FFCEAD; }
+      .footer .footer__bloque .footer__data {
+        color: #FFCEAD; }
+    .footer .footer__redes {
+      width: 30em;
+      display: flex;
+      flex-direction: row;
+      padding: 2em;
+      justify-content: space-between; }
+      .footer .footer__redes .footer__links--fb {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--ig {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--tw {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--wa {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--yt {
+        width: 3.8em;
+        padding-top: 0.2em; }
+  .estreno .estreno__container .estreno__video, .exclusivos .estreno__container .estreno__video {
+    width: 100%;
+    border-radius: 4px;
+    align-self: center; }
+  .estreno .estreno__container .estreno__ficha .estreno__compra, .exclusivos .estreno__container .estreno__ficha .estreno__compra {
+    font-family: 'Merriweather', serif;
+    width: 15em;
+    height: 3em;
+    background-color: hotpink;
+    transition: color 0.5s; }
+  .estreno .estreno__container .estreno__ficha .estreno__compra:hover, .exclusivos .estreno__container .estreno__ficha .estreno__compra:hover {
+    transform: scale(1.2);
+    color: #FFCEAD; }
+  .estreno .estreno__flecha, .exclusivos .estreno__flecha {
+    display: block;
+    width: 5em;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0em;
+    left: 3em; }
+  .compra__check {
     background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
-    width: 100vw; }
-    .concurso .concurso__img {
-      position: absolute;
-      width: 100vw;
-      opacity: 0.3; }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .compra__check .compra__check--caja {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      border: solid black 2px;
+      border-radius: 0.6em;
+      margin: 5em; }
+      .compra__check .compra__check--caja .compra__check--mensaje {
+        font-family: 'Merriweather', serif;
+        font-size: 4em;
+        justify-self: center;
+        padding: 1em; }
+      .compra__check .compra__check--caja .compra__check--check {
+        width: 8em;
+        padding: 1em; }
+  .concurso {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
     .concurso .concurso__bienvenida {
-      width: 100vw;
-      position: relative;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center; }
       .concurso .concurso__bienvenida .concurso__bienvenida--titulo {
-        padding-top: 1 em;
-        font-size: 2em;
+        padding: 1em;
+        font-size: 3em;
         text-align: center;
         font-family: 'Merriweather', serif; }
       .concurso .concurso__bienvenida .concurso__mensaje {
-        font-size: 2.12em;
+        font-size: 2em;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
-        padding: 0%; }
+        padding: 1.5em; }
+  .formulario {
+    background-image: linear-gradient(to bottom, #FFCEAD, #FFF5AB); }
+    .formulario .formulario__caja {
+      background-color: #834083;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+      border: solid black 3px;
+      border-radius: 1em; }
+      .formulario .formulario__caja .formulario__elementos {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em; }
+        .formulario .formulario__caja .formulario__elementos label {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 500;
+          color: #FFCEAD; }
+  .nota__caja {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .nota__caja .nota__titulo {
+      font-family: 'Merriweather', serif;
+      font-size: 2em;
+      align-items: center;
+      padding: 0.5em; }
+    .nota__caja .nota__envoltorio {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .nota__caja .nota__envoltorio .nota__foto {
+        width: 50%;
+        border: solid black 5px;
+        border-radius: 1em;
+        margin: 1em; }
+      .nota__caja .nota__envoltorio .nota__cuerpo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        padding: 0.3em; } }
+
+@media only screen and (min-width: 1900px) {
   .formulario {
     position: relative;
     background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD); }
     .formulario .formulario__caja {
-      width: 100vw;
+      width: 100%;
       display: flex;
       flex-direction: column; }
       .formulario .formulario__caja .formulario__elementos {
@@ -723,7 +1307,117 @@ a {
         flex-direction: row;
         justify-content: space-between; }
   .estreno__video {
-    width: 100vw;
+    width: 100%;
     border: solid black 4px;
     border-radius: 4px;
-    align-self: center; } }
+    align-self: center; }
+  .footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #834083; }
+    .footer .footer__bloque {
+      display: flex;
+      flex-direction: column;
+      padding: 2em; }
+      .footer .footer__bloque .footer__envoltorio {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0; }
+        .footer .footer__bloque .footer__envoltorio .footer__titulo {
+          padding-right: 0.1em;
+          color: #FFCEAD; }
+      .footer .footer__bloque .footer__data {
+        color: #FFCEAD; }
+    .footer .footer__redes {
+      width: 30em;
+      display: flex;
+      flex-direction: row;
+      padding: 2em;
+      justify-content: space-between; }
+      .footer .footer__redes .footer__links--fb {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--ig {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--tw {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--wa {
+        width: 3em;
+        padding: 0; }
+      .footer .footer__redes .footer__links--yt {
+        width: 3.8em;
+        padding-top: 0.2em; }
+  .estreno .estreno__container .estreno__video, .exclusivos .estreno__container .estreno__video {
+    width: 100%;
+    border-radius: 4px;
+    align-self: center; }
+  .estreno .estreno__container .estreno__ficha .estreno__compra, .exclusivos .estreno__container .estreno__ficha .estreno__compra {
+    font-family: 'Merriweather', serif;
+    width: 15em;
+    height: 3em;
+    background-color: hotpink;
+    transition: color 0.5s; }
+  .estreno .estreno__container .estreno__ficha .estreno__compra:hover, .exclusivos .estreno__container .estreno__ficha .estreno__compra:hover {
+    transform: scale(1.2);
+    color: #FFCEAD; }
+  .estreno .estreno__flecha, .exclusivos .estreno__flecha {
+    display: block;
+    width: 5em;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0em;
+    left: 57em; }
+  .compra__check {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .compra__check .compra__check--caja {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      border: solid black 2px;
+      border-radius: 0.6em;
+      margin: 15em; }
+      .compra__check .compra__check--caja .compra__check--mensaje {
+        font-family: 'Merriweather', serif;
+        font-size: 3em;
+        justify-self: center;
+        padding: 1em; }
+      .compra__check .compra__check--caja .compra__check--check {
+        width: 7em;
+        padding: 0.5em; }
+  .nota__caja {
+    background-image: linear-gradient(to bottom, #FFF5AB, #FFCEAD);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .nota__caja .nota__titulo {
+      font-family: 'Merriweather', serif;
+      font-size: 3em;
+      align-items: center;
+      padding: 1em; }
+    .nota__caja .nota__envoltorio {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 4em; }
+      .nota__caja .nota__envoltorio .nota__foto {
+        width: 30%;
+        border: solid black 5px;
+        border-radius: 1em;
+        margin: 1em; }
+      .nota__caja .nota__envoltorio .nota__cuerpo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1em;
+        padding: 0.3em; } }

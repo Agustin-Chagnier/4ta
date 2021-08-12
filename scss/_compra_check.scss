@@ -1,0 +1,28 @@
+.compra__check {
+    background-image: $gradiente1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .compra__check--caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        border: solid black 2px;
+        border-radius: 0.6em;
+        margin: 5em;
+        .compra__check--mensaje {
+            font-family: 'Merriweather', serif;
+            font-size: 1em;
+            justify-self: center;
+            padding: 1em;
+        }
+        .compra__check--check {
+            width: 5em;
+            padding: 0.5em;
+        }
+    }
+}

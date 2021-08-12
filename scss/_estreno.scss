@@ -15,9 +15,7 @@
         justify-content: center;
         width: 100%;
         .estreno__video {
-            width: 100vw;
-            border: solid black 4px;
-            border-radius: 4px;
+            width: 100%;
             align-self: center;
         }
         .estreno__ficha {
@@ -26,6 +24,7 @@
             justify-content: center;
             text-align: center;
             padding-top: 1em;
+            z-index: 3;
             .estreno__fecha {
                 font-family: 'Montserrat', sans-serif;
             }
@@ -38,7 +37,19 @@
                 margin-bottom: 2em;
                 border: solid $terciary 2px;
                 border-radius: 3px;
+                .estreno__compra--link {
+                    text-decoration: none;
+                    color: inherit;
+                }
             }
         }
+    }
+    .estreno__flecha {
+        display: none;
+        width: 5em;
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0em;
+        left: 57em;
     }
 }

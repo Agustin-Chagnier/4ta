@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta name="description" content="Entra a nuestro stream en vivo, ingresa tu ticket y disfruta tu show">
-    <meta name="keyword" content="show, vivo, artistas, bandas, session, stream, ticket, espectaculo">
+    <meta name="description" content="Conoce al equipo de LAMS.">
+    <meta name="keyword" content="miembros, tecnicos, diseñadores, LAMS, shows, vivo, artistas, bandas, session">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <link href="../css/index.css" rel="stylesheet">
 
 
-    <title>LAMS Concurso</title>
+    <title>LAMS tickets</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a href="../index.html"><img src="../img/logo-Nav.jpg" alt="LAMS"></a>
+                <img class="navbar-brand" src="../img/logo-Nav.jpg">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="botonDropdown">MENU</span>
               </button>
@@ -53,18 +53,39 @@
 
     </header>
 
+    <!-- COMPRA -->
 
-
-    <div class="stream">
-        <h1 class="stream__titulo">
-            EL SHOW EMPIEZA EN 00:00:00
-        </h1>
-        <iframe class="stream__ventana" width="560" height="315" src="https://www.youtube.com/embed/VqbeR7Wfsdo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-            </iframe>
-
-    </div>
-
+    <section class="compra">
+        <h4 class="compra__detalle"><strong>MARILINA BERTOLDI</strong> / MAYO 04 / 22HS</h4>
+        <hr>
+        <p class="compra__precio">TICKET VIRTUAL = Precio 500$</p>
+        <hr>
+        <form class="compra__caja" action="">
+            <div class="compra__elementos">
+                <label class="compra__label" for="nombre">Nombre</label>
+                <input name="nombre" id="nombre" type="text" required="">
+            </div>
+            <div class="compra__elementos">
+                <label class="compra__label" for="DNI">DNI</label>
+                <input name="DNI" id="DNI" type="text" required="">
+            </div>
+            <div class="compra__elementos">
+                <label class="compra__label" for="email">Email</label>
+                <input name="email" id="email" type="email" required="">
+            </div>
+            <div class="compra__elementos--tarjeta">
+                <label class="compra__label" for="tarjeta">Tarjeta de credito</label>
+                <input name="tarjeta" id="tarjeta" type="text" required="">
+                <label class="compra__label" for="vencimiento">Vto.</label>
+                <input name="vencimiento" id="vencimiento" type="text" required="">
+                <label class="compra__label" for="codigoseguridad">Codigo de seguridad</label>
+                <input name="codigoseguridad" id="codigoseguridad" type="text" required="">
+            </div>
+            <button class="compra__confirmacion" type="button"><a class="compra__confirmacion--link" href="compra_check.html">Comprar</a></button>
+        </form>
+        <hr>
+        <p class="aviso">Recibiras un mensaje en tu correo electronico con el numero unico de tu ticket virtual que deberas ingresar en la seccion de stream el dia del estreno. Si no podes ver el stream se puede solicitar un reembolso con 24hs de anticipacion.</p>
+    </section>
 
     <!-- FOOTER -->
 

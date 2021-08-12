@@ -24,7 +24,9 @@
 
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <img class="navbar-brand" src="../img/logo-Nav.jpg">
+                <a href="../index.html">
+                    <img src="../img/logo-Nav.jpg" alt="LAMS">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="botonDropdown">MENU</span>
               </button>
@@ -55,46 +57,46 @@
 
     <!-- CONCURSO -->
 
-    <div class="container-fluid">
-        <section class="concurso">
-            <div class="concurso__bienvenida">
-                <h1 class="concurso__bienvenida--titulo">"Haciendo sonar al mundo"</h1>
-                <p class="concurso__mensaje">
-                    LAMS abre las puertas de su estudio cada semana y quiere invitarte a su concurso semanal donde podes ganar un lugar en nuestras sesiones online. Solo tenes que mandar una muestra del material de tu banda/proyecto. Los 5 participantes mas votados en nuestra
-                    seccion de postulantes de YouTube tendran su material publicado en nuestra Home Page y el mas votado de todos podra tocar en una de las LAMS session de cada domingo.
-                </p>
-            </div>
-        </section>
-    </div>
+
+    <section class="concurso">
+        <div class="concurso__bienvenida">
+            <h1 class="concurso__bienvenida--titulo">"Haciendo sonar al mundo"</h1>
+            <p class="concurso__mensaje">
+                LAMS abre las puertas de su estudio cada semana y quiere invitarte a su concurso semanal donde podes ganar un lugar en nuestras sesiones online. Solo tenes que mandar una muestra del material de tu banda/proyecto. Los 5 participantes mas votados en nuestra
+                seccion de postulantes de YouTube tendran su material publicado en nuestra Home Page y el mas votado de todos podra tocar en una de las LAMS session de cada domingo.
+            </p>
+        </div>
+    </section>
+
 
     <!-- FORMULARIO -->
 
-    <div class="container-fluid">
-        <section class="formulario">
-            <form class="formulario__caja" action="">
-                <div class="formulario__elementos">
-                    <label for="proyecto">Proyecto</label>
-                    <input name="proyecto" id="proyecto" type="text" required="">
-                </div>
-                <div class="formulario__elementos">
-                    <label for="email">Email</label>
-                    <input name="email" id="email" type="email" required="">
-                </div>
-                <div class="formulario__elementos">
-                    <label for="numero">Numero contacto</label>
-                    <input name="numero" id="numero" type="text" required="">
-                </div>
-                <div class="formulario__elementos">
-                    <label for="video">Video</label>
-                    <input name="video" id="video" type="file" required="">
-                </div>
-                <div class="formulario__elementos">
-                    <label for="lam">Proyecto fuera de Latinoamerica?</label>
-                    <input name="lam" id="lam" type="checkbox">
-                </div>
-                <div class="formulario__elementos">
-                    <label for="locacion">Zona/Locacion</label>
-                    <select name="pais">
+
+    <section class="formulario">
+        <form class="formulario__caja" action="">
+            <div class="formulario__elementos">
+                <label for="proyecto">Proyecto</label>
+                <input name="proyecto" id="proyecto" type="text" required="">
+            </div>
+            <div class="formulario__elementos">
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" required="">
+            </div>
+            <div class="formulario__elementos">
+                <label for="numero">Numero contacto</label>
+                <input name="numero" id="numero" type="text" required="">
+            </div>
+            <div class="formulario__elementos">
+                <label for="video">Video</label>
+                <input name="video" id="video" type="file" required="">
+            </div>
+            <div class="formulario__elementos">
+                <label for="lam">Proyecto fuera de Latinoamerica?</label>
+                <input name="lam" id="lam" type="checkbox">
+            </div>
+            <div class="formulario__elementos">
+                <label for="locacion">Zona/Locacion</label>
+                <select name="pais">
                         <option value="argentina">Argentina</option>
                         <option value="bolivia">Bolivia</option>
                         <option value="brasil">Brasil</option>
@@ -105,22 +107,22 @@
                         <option value="mexico">Mexico</option>
                         <option value="otro">Otro...</option>
                     </select>
-                </div>
-                <div class="formulario__elementos">
-                    <label for="solista">Solista</label>
-                    <input name="solista" id="solista" type="radio">
-                    <label for="banda/grupo">Banda/grupo</label>
-                    <input name="banda/grupo" id="banda/grupo" type="radio">
-                    <label for="ensamble">Ensamble</label>
-                    <input name="ensamble" id="ensamble" type="radio">
-                </div>
-                <div class="formulario__elementos">
-                    <input type="reset" value="Limpiar">
-                    <input type="submit" value="Enviar suscripcion">
-                </div>
-            </form>
-        </section>
-    </div>
+            </div>
+            <div class="formulario__elementos">
+                <label for="solista">Solista</label>
+                <input name="solista" id="solista" type="radio">
+                <label for="banda/grupo">Banda/grupo</label>
+                <input name="banda/grupo" id="banda/grupo" type="radio">
+                <label for="ensamble">Ensamble</label>
+                <input name="ensamble" id="ensamble" type="radio">
+            </div>
+            <div class="formulario__elementos">
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar suscripcion">
+            </div>
+        </form>
+    </section>
+
 
 
 
@@ -147,6 +149,9 @@
             </a>
             <a href="https://www.whatsapp.com/" target="_blank">
                 <img class="footer__links--wa" src="../img/whatsapp.svg" alt="whatsapp">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img class="footer__links--yt" src="../img/youtube.svg" alt="youtube">
             </a>
         </div>
     </footer>

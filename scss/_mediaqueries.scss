@@ -1,496 +1,1108 @@
-@media only screen and (min-width: 480px) {
-    .container-fluid {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    .concurso {
-        background-image: $gradiente1;
-        width: 100vw;
-        .concurso__img {
-            position: absolute;
-            width: 100vw;
-            opacity: 0.3;
-        }
-        .concurso__bienvenida {
-            width: 100vw;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .concurso__bienvenida--titulo {
-                padding-top: 0.5em;
-                font-size: 1.2em;
-                text-align: center;
-                font-family: 'Merriweather', serif;
-            }
-            .concurso__mensaje {
-                font-size: 1.03em;
-                text-align: center;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 800;
-            }
-        }
-    }
-    .formulario {
-        background-image: $gradiente1;
-        .formulario__caja {
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            .formulario__elementos {
-                padding: 1em;
+    @media only screen and (min-width: 480px) {
+        .formulario {
+            background-image: $gradiente1;
+            .formulario__caja {
+                width: 100%;
                 display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .estreno {
-        background-image: black;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        .estreno__titulo {
-            font-family: 'Merriweather', serif;
-            text-align: left;
-            position: absolute;
-            padding-bottom: 9em;
-            padding-left: 0.5em;
-            color: rgb(236, 73, 155);
-            z-index: 2;
-        }
-        .estreno__container {
-            .estreno__video {
-                width: 100vw;
-                border: none;
-                opacity: 0.6;
-            }
-            .estreno__ficha {
-                display: flex;
-                position: absolute;
                 flex-direction: column;
-                justify-content: left;
-                text-align: left;
-                padding-left: 0.5em;
-                .estreno__fecha {
-                    font-family: 'Merriweather', serif;
-                    font-size: 3.5em;
-                    padding-top: 0.5em;
-                    padding-left: 0.1em;
-                    color: rgb(255, 255, 255);
-                }
-                .estreno__data {
-                    font-family: 'Montserrat', sans-serif;
-                    color: yellow;
-                    padding-left: 0.5em;
-                }
-                .estreno__compra {
-                    width: 12em;
-                    border: solid $terciary 2px;
-                    border-radius: 10px;
-                    align-self: initial;
+                .formulario__elementos {
+                    padding: 1em;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
                 }
             }
         }
-    }
-    .container-fluid {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    .concurso {
-        background-image: $gradiente1;
-        width: 100vw;
-        .concurso__img {
-            position: absolute;
-            width: 100vw;
-            opacity: 0.3;
+        .estreno__flecha {
+            display: none;
+            width: 5em;
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0em;
+            left: 57em;
         }
-        .concurso__bienvenida {
-            width: 100vw;
-            position: relative;
+        .compra {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            .concurso__bienvenida--titulo {
-                padding-top: 0.5em;
-                font-size: 2em;
-                text-align: center;
-                font-family: 'Merriweather', serif;
-            }
-            .concurso__mensaje {
-                font-size: 1.28em;
-                text-align: center;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 800;
-                padding: 0%;
-            }
-        }
-    }
-    .formulario {
-        background-image: $gradiente1;
-        .formulario__caja {
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            .formulario__elementos {
-                padding: 1em;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .navbar-brand {
-        width: 15%;
-    }
-    .estreno {
-        .estreno__container {
-            .estreno__video {
-                width: 100vw;
-                border-radius: 4px;
-                align-self: center;
-            }
-        }
-    }
-    .nosotros {
-        background-image: $gradiente1;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        .nosotros__titulo {
-            font-family: 'Merriweather', serif;
-            text-align: center;
-            padding-top: 1em;
-            padding-bottom: 1em;
-        }
-        .nosotros__fichas {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
             justify-content: space-around;
-            .card {
+            background-image: $gradiente1;
+            .compra__detalle {
+                margin: 2em;
+            }
+            .compra__precio {
+                margin: 2em;
+            }
+            .compra__caja {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                margin-bottom: 1em;
-                .card-body {
-                    background-color: burlywood;
+                justify-content: space-between;
+                background-color: $primary;
+                border: solid black 4px;
+                border-radius: 1em;
+                .compra__elementos {
+                    padding: 1em;
+                    width: 30%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .compra__label {
+                        font-family: Montserrat;
+                        font-weight: 900;
+                        color: $secondary;
+                        padding: 0.5em;
+                    }
+                }
+                .compra__elementos--tarjeta {
+                    width: 30%;
+                    padding: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: start;
+                    .compra__label {
+                        font-family: Montserrat;
+                        font-weight: 900;
+                        color: $secondary;
+                        padding: 0.5em;
+                    }
+                }
+                .compra__confirmacion {
+                    margin: 1em;
+                    width: 15em;
+                    background-color: $terciary;
+                    color: wheat;
+                    font-size: 1.5em;
+                    font-weight: 900;
+                    border: solid black 2px;
+                    border-radius: 3px;
+                    z-index: 1;
+                    .compra__confirmacion--link {
+                        text-decoration: none;
+                        color: white;
+                    }
                 }
             }
         }
-    }
-    .container-fluid {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    .concurso {
-        background-image: $gradiente1;
-        width: 100vw;
-        .concurso__img {
-            position: absolute;
-            width: 100vw;
-            opacity: 0.3;
-        }
-        .concurso__bienvenida {
-            width: 100vw;
+        .footer {
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            .concurso__bienvenida--titulo {
-                padding-top: 0.5em;
-                font-size: 2em;
-                text-align: center;
-                font-family: 'Merriweather', serif;
-            }
-            .concurso__mensaje {
-                font-size: 1.7em;
-                text-align: center;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 800;
-                padding: 0%;
-            }
-        }
-    }
-    .formulario {
-        background-image: $gradiente1;
-        .formulario__caja {
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            .formulario__elementos {
-                padding: 1em;
+            width: 100%;
+            background-color: $primary;
+            .footer__bloque {
                 display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .navbar-brand {
-        width: 8%;
-    }
-    .estreno {
-        .estreno__container {
-            .estreno__video {
-                width: 99vw;
-                border-radius: 4px;
-                align-self: center;
-            }
-            .estreno__ficha {
-                .estreno__compra {
-                    font-family: 'Merriweather', serif;
-                    width: 15em;
-                    height: 3em;
-                    background-color: hotpink;
-                    transition: color 0.5s;
+                flex-direction: column;
+                padding: 2em;
+                .footer__envoltorio {
+                    display: flex;
+                    flex-direction: row;
+                    padding-left: 0;
+                    .footer__titulo {
+                        padding-right: 0.1em;
+                        color: $secondary;
+                    }
                 }
-                .estreno__compra:hover {
-                    transform: scale(1.2);
+                .footer__data {
                     color: $secondary;
                 }
             }
-        }
-    }
-    .nosotros {
-        background-image: $gradiente1;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        .nosotros__titulo {
-            font-family: 'Merriweather', serif;
-            text-align: center;
-            padding-top: 1em;
-            padding-bottom: 1em;
-        }
-        .nosotros__fichas {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            .card {
+            .footer__redes {
+                width: 30em;
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin-bottom: 1em;
-                .card-body {
-                    background-color: burlywood;
+                flex-direction: row;
+                padding: 2em;
+                justify-content: space-between;
+                .footer__links--fb {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--ig {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--tw {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--wa {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--yt {
+                    width: 3.8em;
+                    padding-top: 0.2em;
                 }
             }
         }
     }
-    .concurso {
-        background-image: none;
-        background-color: $terciary;
-    }
-    .concurso__mensaje {
-        text-align: center;
-        margin: 3em;
-        font-size: 1.5em*1.5;
-    }
-    .nav_link {
-        padding-right: 1em;
-        text-decoration: none;
-        font-size: 2em;
-        color: $secondary;
-        transition: color 0.7s;
-    }
-    .nav_link:hover {
-        color: hotpink;
-    }
-    .formulario {
-        background-image: $gradiente1;
-        .formulario__caja {
-            width: 100vw;
+    
+    @media only screen and (min-width: 600px) {
+        .estreno {
+            background-image: black;
+            width: 100%;
             display: flex;
             flex-direction: column;
-            .formulario__elementos {
-                padding: 1em;
+            justify-content: center;
+            .estreno__titulo {
+                font-family: 'Merriweather', serif;
+                text-align: left;
+                position: absolute;
+                padding-bottom: 9em;
+                padding-left: 0.5em;
+                color: rgb(236, 73, 155);
+                z-index: 2;
+            }
+            .estreno__container {
+                .estreno__video {
+                    width: 100%;
+                    border: none;
+                    opacity: 0.6;
+                }
+                .estreno__ficha {
+                    display: flex;
+                    position: absolute;
+                    flex-direction: column;
+                    justify-content: left;
+                    text-align: left;
+                    padding-left: 0.5em;
+                    .estreno__fecha {
+                        font-family: 'Merriweather', serif;
+                        font-size: 3.5em;
+                        padding-top: 0.5em;
+                        padding-left: 0.1em;
+                        color: rgb(255, 255, 255);
+                    }
+                    .estreno__data {
+                        font-family: 'Montserrat', sans-serif;
+                        color: yellow;
+                        padding-left: 0.5em;
+                    }
+                    .estreno__compra {
+                        width: 12em;
+                        border: solid $terciary 2px;
+                        border-radius: 10px;
+                        align-self: initial;
+                    }
+                }
+            }
+        }
+        .container-fluid {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .concurso {
+            background-image: $gradiente1;
+            width: 100%;
+            .concurso__img {
+                position: absolute;
+                width: 100%;
+                opacity: 0.3;
+            }
+            .concurso__bienvenida {
+                width: 100%;
+                position: relative;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
+                .concurso__bienvenida--titulo {
+                    padding-top: 0.5em;
+                    font-size: 2em;
+                    text-align: center;
+                    font-family: 'Merriweather', serif;
+                }
+                .concurso__mensaje {
+                    font-size: 1.28em;
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 800;
+                    padding: 0%;
+                }
+            }
+        }
+        .formulario {
+            background-image: $gradiente1;
+            .formulario__caja {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .formulario__elementos {
+                    padding: 1em;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .estreno__flecha {
+            display: none;
+            width: 5em;
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0em;
+            left: 57em;
+        }
+        .footer {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            width: 100%;
+            background-color: $primary;
+            .footer__bloque {
+                display: flex;
+                flex-direction: column;
+                padding-left: 0.5em;
+                .footer__envoltorio {
+                    display: flex;
+                    flex-direction: row;
+                    padding-left: 0;
+                    .footer__titulo {
+                        padding-right: 0.1em;
+                        color: $secondary;
+                    }
+                }
+                .footer__data {
+                    color: $secondary;
+                }
+            }
+            .footer__redes {
+                width: 30em;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                padding-left: 0;
+                padding-right: 0;
+                .footer__links--fb {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--ig {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--tw {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--wa {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--yt {
+                    width: 3.8em;
+                    padding-top: 0.2em;
+                }
+            }
+        }
+        .compra__check {
+            background-image: $gradiente1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .compra__check--caja {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                border: solid black 2px;
+                border-radius: 0.6em;
+                margin: 8em;
+                .compra__check--mensaje {
+                    font-family: 'Merriweather', serif;
+                    font-size: 2em;
+                    justify-self: center;
+                    padding: 1em;
+                }
+                .compra__check--check {
+                    width: 5em;
+                    padding: 0.5em;
+                }
+            }
+        }
+        .nota__caja {
+            background-image: $gradiente1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .nota__titulo {
+                font-family: 'Merriweather', serif;
+                font-size: 1.5em;
+                align-items: center;
+                padding: 0.5em;
+            }
+            .nota__envoltorio {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .nota__foto {
+                    width: 90%;
+                    border: solid black 5px;
+                    border-radius: 1em;
+                    margin: 1em;
+                }
+                .nota__cuerpo {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1em;
+                    padding: 0.3em;
+                }
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .navbar-brand {
+            width: 15%;
+        }
+        .estreno {
+            .estreno__container {
+                .estreno__video {
+                    width: 100%;
+                    border-radius: 4px;
+                    align-self: center;
+                }
+            }
+        }
+        .nosotros {
+            background-image: $gradiente1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            .nosotros__titulo {
+                font-family: 'Merriweather', serif;
+                text-align: center;
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+            .nosotros__fichas {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
                 flex-wrap: wrap;
+                justify-content: space-around;
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 1em;
+                    .card-body {
+                        background-color: burlywood;
+                    }
+                }
+            }
+        }
+        .container-fluid {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .formulario {
+            background-image: $gradiente1;
+            .formulario__caja {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .formulario__elementos {
+                    padding: 1em;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .footer {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            background-color: $primary;
+            .footer__bloque {
+                display: flex;
+                flex-direction: column;
+                padding: 2em;
+                .footer__envoltorio {
+                    display: flex;
+                    flex-direction: row;
+                    padding-left: 0;
+                    .footer__titulo {
+                        padding-right: 0.1em;
+                        color: $secondary;
+                    }
+                }
+                .footer__data {
+                    color: $secondary;
+                }
+            }
+            .footer__redes {
+                width: 30em;
+                display: flex;
+                flex-direction: row;
+                padding: 2em;
+                justify-content: space-between;
+                .footer__links--fb {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--ig {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--tw {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--wa {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--yt {
+                    width: 3.8em;
+                    padding-top: 0.2em;
+                }
+            }
+        }
+        .estreno__flecha {
+            display: none;
+            width: 5em;
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0em;
+            left: 57em;
+        }
+        .nota__caja {
+            background-image: $gradiente1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .nota__titulo {
+                font-family: 'Merriweather', serif;
+                font-size: 1.5em;
+                align-items: center;
+                padding: 0.5em;
+            }
+            .nota__envoltorio {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                align-items: center;
+                .nota__foto {
+                    width: 80%;
+                    border: solid black 5px;
+                    border-radius: 1em;
+                    margin: 1em;
+                }
+                .nota__cuerpo {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1em;
+                    padding: 0.3em;
+                }
             }
         }
     }
-    .stream {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-image: $gradiente1;
-        width: 100%;
-        padding-bottom: 10em;
-        .stream__titulo {
-            font-family: 'Merriweather', serif;
-            text-align: center;
-            padding-top: 1em;
-            padding-bottom: 1em;
+    
+    @media only screen and (min-width: 1024px) {
+        .navbar-brand {
+            width: 8%;
         }
-        .stream__ventana {
+        .estreno {
+            .estreno__container {
+                .estreno__video {
+                    width: 100%;
+                    border-radius: 4px;
+                    align-self: center;
+                }
+                .estreno__ficha {
+                    .estreno__compra {
+                        font-family: 'Merriweather', serif;
+                        width: 15em;
+                        height: 3em;
+                        background-color: hotpink;
+                        transition: color 0.5s;
+                    }
+                    .estreno__compra:hover {
+                        transform: scale(1.2);
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+        .nosotros {
+            background-image: $gradiente1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            .nosotros__titulo {
+                font-family: 'Merriweather', serif;
+                text-align: center;
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+            .nosotros__fichas {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 1em;
+                    .card-body {
+                        background-color: burlywood;
+                    }
+                }
+            }
+        }
+        .nav_link {
+            padding-right: 1em;
+            text-decoration: none;
+            font-size: 2em;
+            color: $secondary;
+            transition: color 0.7s;
+        }
+        .nav_link:hover {
+            color: hotpink;
+        }
+        .formulario {
+            background-image: $gradiente1;
+            .formulario__caja {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .formulario__elementos {
+                    padding: 1em;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+        .stream {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: $gradiente1;
+            width: 100%;
+            padding-bottom: 10em;
+            .stream__titulo {
+                font-family: 'Merriweather', serif;
+                text-align: center;
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+            .stream__ventana {
+                align-self: center;
+                @include videomedidafull (50em, 30em);
+                padding-bottom: 5em;
+            }
+        }
+        .container-fluid {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .formulario {
+            background-image: $gradiente1;
+            .formulario__caja {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .formulario__elementos {
+                    padding: 1em;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .footer {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            background-color: $primary;
+            .footer__bloque {
+                display: flex;
+                flex-direction: column;
+                padding: 2em;
+                .footer__envoltorio {
+                    display: flex;
+                    flex-direction: row;
+                    padding-left: 0;
+                    .footer__titulo {
+                        padding-right: 0.1em;
+                        color: $secondary;
+                    }
+                }
+                .footer__data {
+                    color: $secondary;
+                }
+            }
+            .footer__redes {
+                width: 30em;
+                display: flex;
+                flex-direction: row;
+                padding: 2em;
+                justify-content: space-between;
+                .footer__links--fb {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--ig {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--tw {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--wa {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--yt {
+                    width: 3.8em;
+                    padding-top: 0.2em;
+                }
+            }
+        }
+        .estreno__flecha {
+            display: none;
+            width: 5em;
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0em;
+            left: 57em;
+        }
+        .concurso {
+            width: 100%;
+            background-image: $gradiente1;
+            .concurso__bienvenida {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .concurso__bienvenida--titulo {
+                    padding: 1em;
+                    font-size: 1.3em;
+                    text-align: center;
+                    font-family: 'Merriweather', serif;
+                }
+                .concurso__mensaje {
+                    font-size: 1em;
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 800;
+                    padding: 1.5em;
+                }
+            }
+        }
+        .formulario {
+            background-image: $gradiente2;
+            .formulario__caja {
+                background-color: $primary;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 1em;
+                border: solid black 3px;
+                border-radius: 1em;
+                .formulario__elementos {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 1em;
+                    label {
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
+                        color: $secondary;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        .formulario {
+            background-image: $gradiente1;
+            .formulario__caja {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .formulario__elementos {
+                    padding: 1em;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    font-size: 1.1em;
+                }
+            }
+        }
+        .footer {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            background-color: $primary;
+            .footer__bloque {
+                display: flex;
+                flex-direction: column;
+                padding: 2em;
+                .footer__envoltorio {
+                    display: flex;
+                    flex-direction: row;
+                    padding-left: 0;
+                    .footer__titulo {
+                        padding-right: 0.1em;
+                        color: $secondary;
+                    }
+                }
+                .footer__data {
+                    color: $secondary;
+                }
+            }
+            .footer__redes {
+                width: 30em;
+                display: flex;
+                flex-direction: row;
+                padding: 2em;
+                justify-content: space-between;
+                .footer__links--fb {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--ig {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--tw {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--wa {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--yt {
+                    width: 3.8em;
+                    padding-top: 0.2em;
+                }
+            }
+        }
+        .estreno {
+            .estreno__container {
+                .estreno__video {
+                    width: 100%;
+                    border-radius: 4px;
+                    align-self: center;
+                }
+                .estreno__ficha {
+                    .estreno__compra {
+                        font-family: 'Merriweather', serif;
+                        width: 15em;
+                        height: 3em;
+                        background-color: hotpink;
+                        transition: color 0.5s;
+                    }
+                    .estreno__compra:hover {
+                        transform: scale(1.2);
+                        color: $secondary;
+                    }
+                }
+            }
+            .estreno__flecha {
+                display: block;
+                width: 5em;
+                position: -webkit-sticky;
+                position: sticky;
+                bottom: 0em;
+                left: 3em;
+            }
+        }
+        .compra__check {
+            background-image: $gradiente1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .compra__check--caja {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                border: solid black 2px;
+                border-radius: 0.6em;
+                margin: 5em;
+                .compra__check--mensaje {
+                    font-family: 'Merriweather', serif;
+                    font-size: 4em;
+                    justify-self: center;
+                    padding: 1em;
+                }
+                .compra__check--check {
+                    width: 8em;
+                    padding: 1em;
+                }
+            }
+        }
+        .concurso {
+            width: 100%;
+            background-image: $gradiente1;
+            .concurso__bienvenida {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .concurso__bienvenida--titulo {
+                    padding: 1em;
+                    font-size: 3em;
+                    text-align: center;
+                    font-family: 'Merriweather', serif;
+                }
+                .concurso__mensaje {
+                    font-size: 2em;
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 800;
+                    padding: 1.5em;
+                }
+            }
+        }
+        .formulario {
+            background-image: $gradiente2;
+            .formulario__caja {
+                background-color: $primary;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 0;
+                border: solid black 3px;
+                border-radius: 1em;
+                .formulario__elementos {
+                    width: 30%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 1em;
+                    label {
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+        .nota__caja {
+            background-image: $gradiente1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .nota__titulo {
+                font-family: 'Merriweather', serif;
+                font-size: 2em;
+                align-items: center;
+                padding: 0.5em;
+            }
+            .nota__envoltorio {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .nota__foto {
+                    width: 50%;
+                    border: solid black 5px;
+                    border-radius: 1em;
+                    margin: 1em;
+                }
+                .nota__cuerpo {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1em;
+                    padding: 0.3em;
+                }
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 1900px) {
+        .formulario {
+            position: relative;
+            background-image: $gradiente1;
+            .formulario__caja {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .formulario__elementos {
+                    padding: 1em;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .estreno__video {
+            width: 100%;
+            border: solid black 4px;
+            border-radius: 4px;
             align-self: center;
-            @include videomedidafull (50em, 30em);
-            padding-bottom: 5em;
         }
-    }
-    .container-fluid {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    .concurso {
-        background-image: $gradiente1;
-        width: 100vw;
-        .concurso__img {
-            position: absolute;
-            width: 100vw;
-            opacity: 0.3;
-        }
-        .concurso__bienvenida {
-            width: 100vw;
+        .footer {
             position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            background-color: $primary;
+            .footer__bloque {
+                display: flex;
+                flex-direction: column;
+                padding: 2em;
+                .footer__envoltorio {
+                    display: flex;
+                    flex-direction: row;
+                    padding-left: 0;
+                    .footer__titulo {
+                        padding-right: 0.1em;
+                        color: $secondary;
+                    }
+                }
+                .footer__data {
+                    color: $secondary;
+                }
+            }
+            .footer__redes {
+                width: 30em;
+                display: flex;
+                flex-direction: row;
+                padding: 2em;
+                justify-content: space-between;
+                .footer__links--fb {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--ig {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--tw {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--wa {
+                    width: 3em;
+                    padding: 0;
+                }
+                .footer__links--yt {
+                    width: 3.8em;
+                    padding-top: 0.2em;
+                }
+            }
+        }
+        .estreno {
+            .estreno__container {
+                .estreno__video {
+                    width: 100%;
+                    border-radius: 4px;
+                    align-self: center;
+                }
+                .estreno__ficha {
+                    .estreno__compra {
+                        font-family: 'Merriweather', serif;
+                        width: 15em;
+                        height: 3em;
+                        background-color: hotpink;
+                        transition: color 0.5s;
+                    }
+                    .estreno__compra:hover {
+                        transform: scale(1.2);
+                        color: $secondary;
+                    }
+                }
+            }
+            .estreno__flecha {
+                display: block;
+                width: 5em;
+                position: -webkit-sticky;
+                position: sticky;
+                bottom: 0em;
+                left: 57em;
+            }
+        }
+        .compra__check {
+            background-image: $gradiente1;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            .concurso__bienvenida--titulo {
-                padding-top: 1 em;
-                font-size: 2em;
-                text-align: center;
-                font-family: 'Merriweather', serif;
-            }
-            .concurso__mensaje {
-                font-size: 1.8em;
-                text-align: center;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 800;
-                padding: 0%;
+            align-items: center;
+            .compra__check--caja {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                border: solid black 2px;
+                border-radius: 0.6em;
+                margin: 15em;
+                .compra__check--mensaje {
+                    font-family: 'Merriweather', serif;
+                    font-size: 3em;
+                    justify-self: center;
+                    padding: 1em;
+                }
+                .compra__check--check {
+                    width: 7em;
+                    padding: 0.5em;
+                }
             }
         }
-    }
-    .formulario {
-        background-image: $gradiente1;
-        .formulario__caja {
-            width: 100vw;
+        .nota__caja {
+            background-image: $gradiente1;
             display: flex;
             flex-direction: column;
-            .formulario__elementos {
+            justify-content: space-between;
+            align-items: center;
+            .nota__titulo {
+                font-family: 'Merriweather', serif;
+                font-size: 3em;
+                align-items: center;
                 padding: 1em;
+            }
+            .nota__envoltorio {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                width: 100%;
+                padding: 4em;
+                .nota__foto {
+                    width: 30%;
+                    border: solid black 5px;
+                    border-radius: 1em;
+                    margin: 1em;
+                }
+                .nota__cuerpo {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.1em;
+                    padding: 0.3em;
+                }
             }
         }
     }
-}
-
-@media only screen and (min-width: 1200px) {
-    .concurso {
-        background-image: $gradiente1;
-        width: 100vw;
-        .concurso__img {
-            position: absolute;
-            width: 100vw;
-            opacity: 0.3;
-        }
-        .concurso__bienvenida {
-            width: 100vw;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .concurso__bienvenida--titulo {
-                padding-top: 1 em;
-                font-size: 2em;
-                text-align: center;
-                font-family: 'Merriweather', serif;
-            }
-            .concurso__mensaje {
-                font-size: 2.12em;
-                text-align: center;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 800;
-                padding: 0%;
-            }
-        }
-    }
-    .formulario {
-        background-image: $gradiente1;
-        .formulario__caja {
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            .formulario__elementos {
-                padding: 1em;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 1900px) {
-    .concurso {
-        background-image: $gradiente1;
-        width: 100vw;
-        .concurso__img {
-            position: absolute;
-            width: 100vw;
-            opacity: 0.3;
-        }
-        .concurso__bienvenida {
-            width: 100vw;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .concurso__bienvenida--titulo {
-                padding-top: 1 em;
-                font-size: 2em;
-                text-align: center;
-                font-family: 'Merriweather', serif;
-            }
-            .concurso__mensaje {
-                font-size: 2.12em;
-                text-align: center;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 800;
-                padding: 0%;
-            }
-        }
-    }
-    .formulario {
-        position: relative;
-        background-image: $gradiente1;
-        .formulario__caja {
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            .formulario__elementos {
-                padding: 1em;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-        }
-    }
-    .estreno__video {
-        width: 100vw;
-        border: solid black 4px;
-        border-radius: 4px;
-        align-self: center;
-    }
-}

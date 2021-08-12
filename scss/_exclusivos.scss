@@ -7,20 +7,24 @@
     }
 }
 
-.exclusivos__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 1em;
-    .exclusivos__cuerpo {
+.exclusivos__link {
+    text-decoration: none;
+    color: $secondary;
+    .exclusivos__card {
         display: flex;
-        flex-direction: row;
-        background-color: rgba(0, 0, 0, 0.425);
-        padding: 1em;
-        .exclusivos__p {
-            font-family: 'Montserrat', sans-serif;
-            .exclusivos__strong {
-                color: $opcolor;
+        flex-direction: column;
+        justify-content: center;
+        .exclusivos__cuerpo {
+            display: flex;
+            flex-direction: row;
+            background-color: rgba(0, 0, 0, 0.425);
+            padding: 1em;
+            .exclusivos__p {
+                font-family: 'Montserrat', sans-serif;
+                color: $secondary;
+                .exclusivos__strong {
+                    color: $opcolor;
+                }
             }
         }
     }
